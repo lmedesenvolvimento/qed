@@ -1,0 +1,265 @@
+<!--INICIO DO TÓPICO-->
+<div class="linha">
+  <div class="col-xs-4">
+  
+  
+<p>Vamos obter no próximo exemplo a fórmula da área do polígono <i>regular</i> de <i>n</i> lados, lembrando que num polígono <i>regular</i> os comprimentos dos lados assim como os ângulos internos formados por lados adjacentes são iguais entre si.</p>
+
+
+ <!-- INICIO QUADRO-->      
+   <uab-quadro title="Exemplo" class="quadro-exemplo" icon="layout/quadro-exemplo.png">
+           <p><b>Exemplo 6: Área do polígono regular de n lados</b></p>
+
+
+<p>Um polígono regular de n > 3  lados pode ser dividido em n triângulos idênticos trançando os segmentos que unem o centro do polígono a seus vértices (veja a Figura <b>9.8</b>, onde n = 9). Veja que cada um desses triângulos é isósceles e possui mesma área.  O apótema de um polígono regular é a distância entre o centro do polígono e (o ponto médio de qualquer) um de seus lados. Na Figura <b>9.8</b>, veja que o apótema é o segmento tracejado e é igual à medida da altura de um dos triângulos mencionados acima. Chamando de a o apótema ℓ a medida do lado do polígono, temos que a área de cada triângulo é aℓ/2. Assim, a área do polígono é <img src="imagens/07/01.png" class="img-inline" align="absmiddle">. Por ﬁm, perceba que nℓ é o perímetro do polígono, de forma que obtemos o seguinte resultado.</p>
+
+
+
+
+<h1>AQUI TERÁ UM ANIMAÇÃO  GIF</h1>
+   
+   <!--INICIO DA IMAGEM-->
+                   <div a style="text-align: center;">
+                       <img src="imagens/07/02.png"   /><br>
+                       
+                      <!--INICIO DA DESCRIÇÃO DA IMAGEM
+                       <md-card class="visible-print" style=" width:60%; text-align: justify;padding: 10px">
+                         <div class="h4"><b>Descrição da imagem:</b></div>
+                         <p style="font-size:13px"></p>
+                         <br>
+                       </md-card> 
+                       FINAL DA DESCRIÇÃO DA IMAGEM-->
+                       <span  class="legenda" style="margin-top:5px; margin-bottom: 10px">Figura 9.8: um polígono regular com 9 lados dividido em 9 triângulos de mesma área.</span>
+                       </div> 
+                         <!--FINAL DA IMAGEM-->
+
+
+<!--INICIO EFEITO DESTAQUE-->   
+<div align="center">
+<div class="destaque uab-md-primary-light" style="width:75%; text-align:justify">
+
+<p style="text-align: center;"><b>Área de um polígono regular</b></p>
+
+<p>É igual à <i>metade do produto de seu apótema pelo perímetro</i>.</p>
+
+
+</div>
+</div>
+<!--FINAL EFEITO DESTAQUE--> 
+
+
+   </uab-quadro>
+   <!-- FINAL QUADRO--> 
+
+
+<p>É comum chamar a metade do perímetro de <i>semiperímetro</i>. Dessa forma, podemos também dizer que a área de um polígono regular é igual ao <i>produto do apótema pelo semiperímetro</i>.</p>
+
+<div class="h2">Polígonos quaisquer </div>
+
+
+<p>Não existe fórmula fechada para a área de um polígono arbitrário, mas existe um método que pode ser empregado quando é possível calcular as distâncias entre quaisquer dois vértices da ﬁgura: todo polígono pode ser repartido em triângulos disjuntos, trançando alguns dos segmentos que ligam vértices do polígono (chamamos isso de “triangularizar o polígono”). Daí, podemos calcular a área do polígono somando as áreas desses triângulos (que, por sua vez, podem ser calculadas de diferentes maneiras, a depender de quais informações temos disponíveis). </p>
+
+
+
+<!--INICIO EFEITO DESTAQUE-->   
+<div align="center">
+<div class="destaque uab-md-primary-light" style="width:75%; text-align:justify">
+
+<p>Esse método é ilustrado na Figura <b>9.9</b>.</p>
+
+
+<!--INICIO DA IMAGEM-->
+                <div a style="text-align: center;">
+                    <img src="imagens/07/03.png"   /><br>
+                    
+                   <!--INICIO DA DESCRIÇÃO DA IMAGEM
+                    <md-card class="visible-print" style=" width:60%; text-align: justify;padding: 10px">
+                      <div class="h4"><b>Descrição da imagem:</b></div>
+                      <p style="font-size:13px"></p>
+                      <br>
+                    </md-card> 
+                    FINAL DA DESCRIÇÃO DA IMAGEM-->
+                    <span  class="legenda" style="margin-top:5px; margin-bottom: 10px">Figura 9.9: Triangularização de um polígono.</span>
+                    </div> 
+                      <!--FINAL DA IMAGEM-->
+
+<p>O polígono <i>ABCDEFGH</i> é a união dos triângulos <i>ABC, ACH, CGH, CFG, CDF e DEF</i> e a área do polígono é a soma das áreas desses triângulos. A triangularização de um polígono não é única. Por exemplo, poderíamos substituir o segmento <i>DF</i> por <i>CE</i> e obter outra triangularização.</p>
+
+
+</div>
+</div>
+<!--FINAL EFEITO DESTAQUE--> 
+
+<p>Na antiguidade, os agrimensores provavelmente utilizavam o método da triangularização do polígono para determinar a área das propriedades rurais. Inicialmente aproximavam os terrenos por polígonos irregulares, que decom- punham em triângulos (eles conheciam técnicas para medir os lados desses triângulos). Calculavam as suas áreas, possivelmente pela chamada <i>fórmula de Herão</i>, conhecida já na antiguidade. Essa fórmula fornece uma maneira alternativa de calcular áreas de triângulos tendo conhecimento apenas das medidas de seus três lados, evitando a necessidade de calcular a medida de uma altura. Se os lados possuem medidas a, b e c, primeiro calcula-se o se- miperímetro, que é <i>p = (a + b + c)/2</i> e, então, a área do triângulo é dada por:</p>
+
+
+<div align="center">
+<p style="tex text-align: center;"><img src="imagens/07/04.png" align="absmiddle" class="img-inline"> (Fórmula de Herão).</p>
+</div>
+
+
+<p>A área do terreno, então, é a soma das áreas desses triângulos.</p>
+
+<p>Embora a dedução da fórmula de Herão não faça parte do conteúdo didático do ensino médio, apresentamos uma seção com a dedução algébrica da fórmula de Herão para aqueles alunos que tenham curiosidade de conhecer sua origem. </p>
+
+
+<!--INICIO EFEITO DESTAQUE-->   
+<div align="center">
+<p class="destaque uab-md-primary-light" style="width:75%; text-align:justify">Você consegue imaginar por que os gregos antigos chamavam os geômetras egípcios do seu tempo de “esticadores de corda”? Pense em como os egípcios delimitavam os terrenos e os dividiam em triângulos com os recursos limitados
+que dispunham na época.
+</p>
+</div>
+<!--FINAL EFEITO DESTAQUE--> 
+
+
+<p>No mundo moderno, é possível aproximar a área de um terreno usando um GPS para marcar as coordenadas cartesianas dos vértices de um polígono que delimita (ainda que de forma aproximada) o contorno do terreno. De posse dessas coordenadas é possível calcular as distâncias entre os pontos (pelo teorema de Pitágoras, como explicado no Módulo 11) e de posse dos comprimentos dos lados dos triângulos é possível aplicar a fórmula de Herão para obter suas áreas. Mas, de posse das coordenadas dos vértices, há outras maneiras ainda mais eﬁcientes de calcular a área do polígono que fogem do escopo deste módulo (por exemplo, usando matrizes). Em geral, esses cálculos são efetuados por aplicativos cujo funcionamento interno é ignorado pelo usuário ﬁnal.</p>
+
+
+<div class="h2">Fórmula de Herão</div>
+
+<h2> ESSA IMAGEM SERÁ TROCADA </h2>
+
+
+<!--INICIO DA IMAGEM-->
+                <div a style="text-align: center;">
+                    <img src="imagens/07/05.png"   /><br>
+                    
+                   <!--INICIO DA DESCRIÇÃO DA IMAGEM
+                    <md-card class="visible-print" style=" width:60%; text-align: justify;padding: 10px">
+                      <div class="h4"><b>Descrição da imagem:</b></div>
+                      <p style="font-size:13px"></p>
+                      <br>
+                    </md-card> 
+                    FINAL DA DESCRIÇÃO DA IMAGEM
+                    <span  class="legenda" style="margin-top:5px; margin-bottom: 10px"></span>-->
+                    </div> 
+                      <!--FINAL DA IMAGEM-->
+
+
+ <!-- INICIO QUADRO-->      
+   <uab-quadro title="Exemplo" class="quadro-exemplo" icon="layout/quadro-exemplo.png">
+           
+<div align="center"><img src="imagens/07/06.png"> </div>
+
+           <p>a) Calcule a área desse triângulo.</p>
+<p>b) Calcule a altura desse triângulo referente a cada uma das bases.</p>
+</p>
+  
+
+
+ <div class="linha">
+  <div class="col-md-3">
+
+    <!--INICIO SANFONADO SIMPLES-->
+     <uab-sanfonado>
+            <md-card class='sanfonado'>
+              <md-card-title>
+                <md-card-title-text>
+                  <a uab-sanfonado-toggle>
+                    <md-truncate>Solução</md-truncate>
+                  </a>
+                </md-card-title-text>
+    
+                <button md-button class="md-icon-button" uab-sanfonado-toggle>
+                  <md-icon md-font-icon="icon-keyboard_arrow_down"></md-icon>
+                </button>
+              </md-card-title>
+              <md-card-content class="uab-sanfonado-wrap">
+                <div class="uab-sanfonado-content">
+                
+                  <p>a) Calcular o semiperímetro:</p>
+                  
+<div align="center"><img src="imagens/07/07.png"></div>
+
+<p>b) Base: 22m</p>
+<p style="text-align: center;">Área =<img src="imagens/07/08.png" align="absmiddle" class="img-inline">= 93,67<br>
+22 h = 187,34<br>
+h = 8,5 m.</p>
+
+<p>As alturas referentes às outras duas bases deixamos como exercício.</p>
+
+
+                </div>
+              </md-card-content>
+            </md-card>
+          </uab-sanfonado>
+    <!--FIM SANFONADO SIMPLES-->
+
+  </div></div>
+
+
+   </uab-quadro>
+   <!-- FINAL QUADRO--> 
+
+
+<div class="h2">Dedução da Fórmula de Herão</div>
+
+
+<p>O desafio é apresentar uma prova para a fórmula de Herão mostrando que ela realmente calcula a área do triângulo. Apresentaremos uma prova algébrica com muitos cálculos que deixamos aqui para satisfazer a curiosidade dos alunos que se perguntarem por que a fórmula funciona.</p>
+
+<p>Como conhecemos a fórmula da área do triângulo como <img src="imagens/07/09.png" align="absmiddle" class="img-inline">, o desafio é calcular a altura <i>h</i> em função dos lados do triângulo.</p>
+
+
+
+<div align="center"><img src="imagens/07/10.png"> </div>
+
+<p>Ao traçarmos a altura em relação à base c, obtemos dois triângulos retângulos de onde tiramos:</p>
+
+<p style="text-align: center;"><br>b<sup>2</sup> = h<sup>2</sup> + d<sup>2</sup><br>
+a<sup>2</sup> = h<sup>2</sup> + (c – d)<Sup>2</Sup>
+  </p>
+
+<p>Daí,</p>
+
+
+<p style="text-align: center;"><br>a<sup>2</sup> – b<sup>2</sup>	= (c – d)<sup>2</sup> – d<sup>2</sup><br>
+  a<sup>2</sup> – b<sup>2</sup>	= c<sup>2</sup> – 2cd</p>
+
+
+<p>Daí,</p>
+
+
+<div align="center"><img src="imagens/07/11.png"> </div>
+
+
+<p>Na dedução da fórmula, partimos do fato de que h<sup>2</sup>= b<sup>2</sup> – d<sup>2</sup> e usamos repetidamente o produto notável a<sup>2</sup> – b<sup>2</sup> = (a + b)(a – b).</p>
+
+
+<div align="center"><img src="imagens/07/12.png"> </div>
+
+<p>Lembre-se que <i>p=</i><img src="imagens/07/13.png" align="absmiddle" class="img-inline">, logo</p>
+
+<p style="text-align: center;"><br> a +b +c = 2p<br>
+b + c – a = 2p – 2a = 2(p – a).<br>
+a + b – c = 2p – 2c = 2(p – c).<br>
+a – b + c = 2p – 2b = 2(p – b).
+</p>
+
+<p>Continuando,</p>
+
+<div align="center"><img src="imagens/07/14.png"> </div>
+
+
+<p>Área do triângulo, A =<img src="imagens/07/15.png" align="absmiddle" class="img-inline"> logo, A<sup>2</sup> = <img src="imagens/07/16.png" align="absmiddle" class="img-inline"></p>
+
+
+<p>Assim,</p>
+
+
+<div align="center"><p style="text-align: center;"><img src="imagens/07/17.png" align="absmiddle" class="img-inline">  <i>QED</i></p></div>
+
+
+<!-- INICIO QUADRO-->      
+<uab-quadro title="Leitura complementar" class="quadro-leit_complementar" icon="layout/quadro-leit_complementar.png">
+        <p><a href="https://en.wikipedia.org/wiki/Heron's_formula" target="_blank">Heron's formula</a></p>
+
+<p><a href="http://recursostic.educacion.es/descartes/web/materiales_didacticos/formula_heron/formula_de_Heron.htm" target="_blank">Fórmula de  Herón</a></p>
+
+</uab-quadro>
+<!-- FINAL QUADRO--> 
+
+
+
+  </div>
+</div>
+<!--FINAL DO TÓPICO-->

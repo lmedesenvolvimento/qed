@@ -1,0 +1,51 @@
+{
+    "nome": "Aula 09: Área de figuras planas",
+    "academico":{
+        "curso": "Licenciatura em Matemática",
+        "cursoIcone": "layout/icones/matematica_tit.svg",
+        "disciplina":"Material Estruturado Matemática",
+        "responsavel": "Professor: "
+    },
+     "topicos": [        
+        {
+            "nome": "Tópico 01: Contextualizando",
+            "local": "topicos/01.html",
+            "audio": "audios/01.mp3",
+            "default": true
+        },
+        {
+            "nome": "Tópico 02: O que é medir a área de uma figura plana? ",
+            "local": "topicos/02.html",
+            "audio": "audios/02.mp3"
+        },
+        {
+            "nome": "Tópico 03: Unidade de medida de área",
+            "local": "topicos/03.html",
+            "audio": "audios/03.mp3"
+        },
+        {
+            "nome": "Tópico 04: Área de um Quadrado de Lado Arbitrário",
+            "local": "topicos/04.html",
+            "audio": "audios/04.mp3"
+        },
+        {
+            "nome": "Tópico 05: Área dos retângulos",
+            "local": "topicos/05.html",
+            "audio": "audios/05.mp3"
+        },
+        {
+            "nome": "Tópico 06: Área dos triângulos retângulos ",
+            "local": "topicos/06.html",
+            "audio": "audios/06.mp3"
+        }
+    ],
+    "pdf": "pdf/MaterialEstruturadoMatematica_aula_09.pdf",
+    "audio": "audios/MaterialEstruturadoMatematica_aula_09.mp3",    
+    "tema":{
+      "primario": "purple-900",
+      "contraste": "orange"
+    },
+    "imported_styles":[
+        "custom.css"
+    ]
+}
