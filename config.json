@@ -8,35 +8,50 @@
     },
      "topicos": [        
         {
-            "nome": "Tópico 01: Contextualizando",
+            "nome": "Tópico 01: O que é medir a área de uma figura plana? ",
             "local": "topicos/01.html",
             "audio": "audios/01.mp3",
             "default": true
         },
         {
-            "nome": "Tópico 02: O que é medir a área de uma figura plana? ",
+            "nome": "Tópico 02: Unidade de medida de área",
             "local": "topicos/02.html",
             "audio": "audios/02.mp3"
         },
         {
-            "nome": "Tópico 03: Unidade de medida de área",
+            "nome": "Tópico 03: Área de um Quadrado de Lado Arbitrário",
             "local": "topicos/03.html",
             "audio": "audios/03.mp3"
         },
         {
-            "nome": "Tópico 04: Área de um Quadrado de Lado Arbitrário",
+            "nome": "Tópico 04: Área dos retângulos",
             "local": "topicos/04.html",
             "audio": "audios/04.mp3"
         },
         {
-            "nome": "Tópico 05: Área dos retângulos",
+            "nome": "Tópico 05: Área dos triângulos retângulos",
             "local": "topicos/05.html",
             "audio": "audios/05.mp3"
         },
         {
-            "nome": "Tópico 06: Área dos triângulos retângulos ",
+            "nome": "Tópico 06: Área de polígonos com n lados",
             "local": "topicos/06.html",
             "audio": "audios/06.mp3"
+        },
+        {
+            "nome": "Tópico 07: Área de círculos",
+            "local": "topicos/07.html",
+            "audio": "audios/07.mp3"
+        },
+        {
+            "nome": "Tópico 08: O princípio de Cavalieri",
+            "local": "topicos/08.html",
+            "audio": "audios/08.mp3"
+        },
+        {
+            "nome": "Tópico 09: Área de círculos no Egito Antigo",
+            "local": "topicos/09.html",
+            "audio": "audios/09.mp3"
         }
     ],
     "pdf": "pdf/MaterialEstruturadoMatematica_aula_09.pdf",

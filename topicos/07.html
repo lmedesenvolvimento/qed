@@ -3,74 +3,14 @@
   <div class="col-xs-4">
   
   
-<p>Vamos obter no próximo exemplo a fórmula da área do polígono <i>regular</i> de <i>n</i> lados, lembrando que num polígono <i>regular</i> os comprimentos dos lados assim como os ângulos internos formados por lados adjacentes são iguais entre si.</p>
+<p>Arquimedes estimou a área do círculo (e do valor de &pi;) empregando sequencias de polígonos regulares com uma quantidade arbitrariamente grande de lados que estão inscritos e circunscritos em um círculo de raio unitário, conforme ilustramos abaixo. Vemos que as áreas dos polígonos inscritos e circunscritos convergem para a área do círculo.</p>
 
 
- <!-- INICIO QUADRO-->      
-   <uab-quadro title="Exemplo" class="quadro-exemplo" icon="layout/quadro-exemplo.png">
-           <p><b>Exemplo 6: Área do polígono regular de n lados</b></p>
-
-
-<p>Um polígono regular de n > 3  lados pode ser dividido em n triângulos idênticos trançando os segmentos que unem o centro do polígono a seus vértices (veja a Figura <b>9.8</b>, onde n = 9). Veja que cada um desses triângulos é isósceles e possui mesma área.  O apótema de um polígono regular é a distância entre o centro do polígono e (o ponto médio de qualquer) um de seus lados. Na Figura <b>9.8</b>, veja que o apótema é o segmento tracejado e é igual à medida da altura de um dos triângulos mencionados acima. Chamando de a o apótema ℓ a medida do lado do polígono, temos que a área de cada triângulo é aℓ/2. Assim, a área do polígono é <img src="imagens/07/01.png" class="img-inline" align="absmiddle">. Por ﬁm, perceba que nℓ é o perímetro do polígono, de forma que obtemos o seguinte resultado.</p>
-
-
-
-
-<h1>AQUI TERÁ UM ANIMAÇÃO  GIF</h1>
-   
-   <!--INICIO DA IMAGEM-->
-                   <div a style="text-align: center;">
-                       <img src="imagens/07/02.png"   /><br>
-                       
-                      <!--INICIO DA DESCRIÇÃO DA IMAGEM
-                       <md-card class="visible-print" style=" width:60%; text-align: justify;padding: 10px">
-                         <div class="h4"><b>Descrição da imagem:</b></div>
-                         <p style="font-size:13px"></p>
-                         <br>
-                       </md-card> 
-                       FINAL DA DESCRIÇÃO DA IMAGEM-->
-                       <span  class="legenda" style="margin-top:5px; margin-bottom: 10px">Figura 9.8: um polígono regular com 9 lados dividido em 9 triângulos de mesma área.</span>
-                       </div> 
-                         <!--FINAL DA IMAGEM-->
-
-
-<!--INICIO EFEITO DESTAQUE-->   
-<div align="center">
-<div class="destaque uab-md-primary-light" style="width:75%; text-align:justify">
-
-<p style="text-align: center;"><b>Área de um polígono regular</b></p>
-
-<p>É igual à <i>metade do produto de seu apótema pelo perímetro</i>.</p>
-
-
-</div>
-</div>
-<!--FINAL EFEITO DESTAQUE--> 
-
-
-   </uab-quadro>
-   <!-- FINAL QUADRO--> 
-
-
-<p>É comum chamar a metade do perímetro de <i>semiperímetro</i>. Dessa forma, podemos também dizer que a área de um polígono regular é igual ao <i>produto do apótema pelo semiperímetro</i>.</p>
-
-<div class="h2">Polígonos quaisquer </div>
-
-
-<p>Não existe fórmula fechada para a área de um polígono arbitrário, mas existe um método que pode ser empregado quando é possível calcular as distâncias entre quaisquer dois vértices da ﬁgura: todo polígono pode ser repartido em triângulos disjuntos, trançando alguns dos segmentos que ligam vértices do polígono (chamamos isso de “triangularizar o polígono”). Daí, podemos calcular a área do polígono somando as áreas desses triângulos (que, por sua vez, podem ser calculadas de diferentes maneiras, a depender de quais informações temos disponíveis). </p>
-
-
-
-<!--INICIO EFEITO DESTAQUE-->   
-<div align="center">
-<div class="destaque uab-md-primary-light" style="width:75%; text-align:justify">
-
-<p>Esse método é ilustrado na Figura <b>9.9</b>.</p>
-
+<h1>AQUI TERÁ UM ANIMAÇÃO PENDENTE</h1>
 
 <!--INICIO DA IMAGEM-->
                 <div a style="text-align: center;">
-                    <img src="imagens/07/03.png"   /><br>
+                    <img src="imagens/08/01.png"   /><br>
                     
                    <!--INICIO DA DESCRIÇÃO DA IMAGEM
                     <md-card class="visible-print" style=" width:60%; text-align: justify;padding: 10px">
@@ -79,50 +19,123 @@
                       <br>
                     </md-card> 
                     FINAL DA DESCRIÇÃO DA IMAGEM-->
-                    <span  class="legenda" style="margin-top:5px; margin-bottom: 10px">Figura 9.9: Triangularização de um polígono.</span>
+                    <span  class="legenda" style="margin-top:5px; margin-bottom: 10px">Figura 9.4: Arquimedes estimou a área do círculo pelo método da exaustão</span>
                     </div> 
                       <!--FINAL DA IMAGEM-->
 
-<p>O polígono <i>ABCDEFGH</i> é a união dos triângulos <i>ABC, ACH, CGH, CFG, CDF e DEF</i> e a área do polígono é a soma das áreas desses triângulos. A triangularização de um polígono não é única. Por exemplo, poderíamos substituir o segmento <i>DF</i> por <i>CE</i> e obter outra triangularização.</p>
+
+<div class="h2">Cálculo da Área do Círculo</div>
+
+<p>No que segue, vamos usar o método da exaustão, apresentado na Seção <b>9.4</b>, para deduzir a fórmula exata da área do círculo de raio r, para qualquer  real positivo r. Basta inscrever neste círculo polígonos regulares com uma quantidade arbitrariamente grande de lados. Como observamos anteriormente, as áreas desses polígonos se aproximam da área do círculo. Por outro lado, os apótemas dos polígonos se aproximam do raio r do círculo e os perímetros dos polígonos se aproximam da circunferência (ou seja, do perímetro) do círculo. Vamos chamar a circunferência de C. Assim, a área do polígono regular, que é igual ao produto do apótema pela metade de perímetro (como visto na seção anterior), se aproxima de rC/2.  Pelo Método da Exaustão, a área do círculo é rC/2. </p>
 
 
-</div>
-</div>
-<!--FINAL EFEITO DESTAQUE--> 
-
-<p>Na antiguidade, os agrimensores provavelmente utilizavam o método da triangularização do polígono para determinar a área das propriedades rurais. Inicialmente aproximavam os terrenos por polígonos irregulares, que decom- punham em triângulos (eles conheciam técnicas para medir os lados desses triângulos). Calculavam as suas áreas, possivelmente pela chamada <i>fórmula de Herão</i>, conhecida já na antiguidade. Essa fórmula fornece uma maneira alternativa de calcular áreas de triângulos tendo conhecimento apenas das medidas de seus três lados, evitando a necessidade de calcular a medida de uma altura. Se os lados possuem medidas a, b e c, primeiro calcula-se o se- miperímetro, que é <i>p = (a + b + c)/2</i> e, então, a área do triângulo é dada por:</p>
-
-
-<div align="center">
-<p style="tex text-align: center;"><img src="imagens/07/04.png" align="absmiddle" class="img-inline"> (Fórmula de Herão).</p>
-</div>
-
-
-<p>A área do terreno, então, é a soma das áreas desses triângulos.</p>
-
-<p>Embora a dedução da fórmula de Herão não faça parte do conteúdo didático do ensino médio, apresentamos uma seção com a dedução algébrica da fórmula de Herão para aqueles alunos que tenham curiosidade de conhecer sua origem. </p>
+<p>Lembre-se de que C = 2&pi;r. Substituindo isso na expressão anterior, concluímos o seguinte.</p>
 
 
 <!--INICIO EFEITO DESTAQUE-->   
 <div align="center">
-<p class="destaque uab-md-primary-light" style="width:75%; text-align:justify">Você consegue imaginar por que os gregos antigos chamavam os geômetras egípcios do seu tempo de “esticadores de corda”? Pense em como os egípcios delimitavam os terrenos e os dividiam em triângulos com os recursos limitados
-que dispunham na época.
-</p>
+<div class="destaque uab-md-primary-light" style="width:75%; text-align:justify">
+
+<p style="text-align: center;">Área de um  círculo</p>
+
+<p style="text-align: center;">A área de um círculo de raio r é igual a &pi;r<sup>2</sup>.</p>
+
+
+</div>
 </div>
 <!--FINAL EFEITO DESTAQUE--> 
 
 
-<p>No mundo moderno, é possível aproximar a área de um terreno usando um GPS para marcar as coordenadas cartesianas dos vértices de um polígono que delimita (ainda que de forma aproximada) o contorno do terreno. De posse dessas coordenadas é possível calcular as distâncias entre os pontos (pelo teorema de Pitágoras, como explicado no Módulo 11) e de posse dos comprimentos dos lados dos triângulos é possível aplicar a fórmula de Herão para obter suas áreas. Mas, de posse das coordenadas dos vértices, há outras maneiras ainda mais eﬁcientes de calcular a área do polígono que fogem do escopo deste módulo (por exemplo, usando matrizes). Em geral, esses cálculos são efetuados por aplicativos cujo funcionamento interno é ignorado pelo usuário ﬁnal.</p>
+<!--INICIO ANIMAÇÃO HTML5-->
+<div class="linha">
+  <div class="col-md-3 col-xs-4">
+  
+<!--INICIO DA ANIMAÇÃO HTML5--> 
+    <md-card class="hidden-print">
+      <div  align="center">
+        <uab-svg-animation>          
+        	<h3>AQUI TERÁ UMA ANIMAÇÃO PENDENTE</h3>
+       <!--   <iframe src="html5/" width="550" height="410" scrolling="no" frameborder="0"></iframe>-->
+        </uab-svg-animation>
+      </div>
+    </md-card>
+<!--FINAL DA ANIMAÇÃO HTML5--> 
+
+<!--INICIO DA VERSÃO TEXTUAL --> 
+    <uab-sanfonado>
+        <md-card class='sanfonado'>
+          <md-card-title>
+            <md-card-title-text>
+              <a uab-sanfonado-toggle>
+                <md-truncate>Versão Textual</md-truncate>
+              </a>
+            </md-card-title-text>
+
+            <button md-button class="md-icon-button" uab-sanfonado-toggle>
+              <md-icon md-font-icon="icon-keyboard_arrow_down"></md-icon>
+            </button>
+          </md-card-title>
+          <md-card-content class="uab-sanfonado-wrap">
+            <div class="uab-sanfonado-content">
+            
+              <p>Aproveita a animação 11 apenas com polígonos inscritos, n = 4, 5, 6, 7, ....
+Se puder, mostrar que o apótema do polígono se aproxima cada vez mais do raio do círculo à medida que o número de lados n aumenta.
+Ao mesmo tempo, mostra que o perímetro do polígono regular se aproxima cada vez mais da circunferência do círculo à medida que o número de lados n aumenta.</p>
+
+<p>Área do polígono regular de n lados: pa/2; onde p é o perímetro e a é o apótema.</p>
+
+<p>Pela aproximação: 	p  C			(Lê-se “p tende a C)
+			a  r			(Lê-se “a tende a r)
+Área do polígono pa/2  área do círculo.		
+(Lê-se “área do polígono tende a área do círculo)
+
+Logo, área do círculo = Cr/2.
+
+Sabemos que a circunferência do círculo é dada por C = 2∏r.
+
+Assim, área do círculo = ∏ r2.
+</p>	
+              
+              
+            </div>
+          </md-card-content>
+        </md-card>
+      </uab-sanfonado>
+<!--FINAL DA VERSÃO TEXTUAL -->    
+   
+  </div>
+</div>
+<!--FINAL ANIMAÇÃO HTML5-->
 
 
-<div class="h2">Fórmula de Herão</div>
+<p>Na dedução da área do círculo, empregamos que C = 2 &Pi; r, a fórmula que diz que a razão entre a circunferência e o diâmetro (2r) para qualquer círculo é sempre a mesma e a essa razão damos o nome de &Pi;<img src="imagens/08/02.png" align="absmiddle" class="img-inline">.</p>
 
-<h2> ESSA IMAGEM SERÁ TROCADA </h2>
+<p>Mas como provamos que essa razão para qualquer círculo é sempre a mesma? E o que é o &Pi;? Como que o mesmo &Pi; aparece tanto na fórmula da área como na da circunferência de um círculo?</p>
+
+<p>A seção seguinte é optativa, mas ela propõe a explicar esses fatos matemáticos.</p>
+
+<div class="h2">Área do Círculo e sua Circunferência </div>
+
+
+<p><b>O Metro Redondo</b></p>
+
+<p>Vimos que o metro quadrado foi definido como a área de um quadrado de lado 1 metro. Poderíamos ter introduzido uma notação especial para ele como m<sup>2</sup>, entretanto, utilizamos a notação mais tradicional de m<sup>2</sup>.</p>
+
+
+<p>Algo equivalente gostaríamos de fazer para a área de um círculo com raio de 1 metro. Chamaríamos a área desse círculo de metro redondo e o denotaríamos por m○. O mais importante, podemos provar que a área de um círculo de raio r metros é r<sup>2</sup> m○, da mesma forma que a área de um quadrado de lado l metros é l<sup>2</sup> m<sup>2</sup>.</p>
+
+<p>Com o quadrado de lado l metros, onde l é um inteiro positivo, nós mostramos como podemos inserir l<sup>2</sup> quadrados de lado 1 metro dentro dele.</p>
+
+
+ <!-- INICIO QUADRO-->      
+   <uab-quadro title="Exemplo" class="quadro-exemplo" icon="layout/quadro-exemplo.png">
+           <p><b>EXEMPLO 1 – Área dos quadrados de lados medindo números inteiros</b></p>
+
 
 
 <!--INICIO DA IMAGEM-->
                 <div a style="text-align: center;">
-                    <img src="imagens/07/05.png"   /><br>
+                    <img src="imagens/08/03.png"   /><br>
                     
                    <!--INICIO DA DESCRIÇÃO DA IMAGEM
                     <md-card class="visible-print" style=" width:60%; text-align: justify;padding: 10px">
@@ -130,134 +143,568 @@ que dispunham na época.
                       <p style="font-size:13px"></p>
                       <br>
                     </md-card> 
-                    FINAL DA DESCRIÇÃO DA IMAGEM
-                    <span  class="legenda" style="margin-top:5px; margin-bottom: 10px"></span>-->
+                    FINAL DA DESCRIÇÃO DA IMAGEM-->
+                    <span  class="legenda" style="margin-top:5px; margin-bottom: 10px">Figura 9.2: Quadrados de lados 2 (esquerda) e 3 (direita) divididos em quadrados de lado 1</span>
                     </div> 
                       <!--FINAL DA IMAGEM-->
 
 
- <!-- INICIO QUADRO-->      
-   <uab-quadro title="Exemplo" class="quadro-exemplo" icon="layout/quadro-exemplo.png">
-           
-<div align="center"><img src="imagens/07/06.png"> </div>
-
-           <p>a) Calcule a área desse triângulo.</p>
-<p>b) Calcule a altura desse triângulo referente a cada uma das bases.</p>
-</p>
-  
-
-
- <div class="linha">
-  <div class="col-md-3">
-
-    <!--INICIO SANFONADO SIMPLES-->
-     <uab-sanfonado>
-            <md-card class='sanfonado'>
-              <md-card-title>
-                <md-card-title-text>
-                  <a uab-sanfonado-toggle>
-                    <md-truncate>Solução</md-truncate>
-                  </a>
-                </md-card-title-text>
-    
-                <button md-button class="md-icon-button" uab-sanfonado-toggle>
-                  <md-icon md-font-icon="icon-keyboard_arrow_down"></md-icon>
-                </button>
-              </md-card-title>
-              <md-card-content class="uab-sanfonado-wrap">
-                <div class="uab-sanfonado-content">
-                
-                  <p>a) Calcular o semiperímetro:</p>
-                  
-<div align="center"><img src="imagens/07/07.png"></div>
-
-<p>b) Base: 22m</p>
-<p style="text-align: center;">Área =<img src="imagens/07/08.png" align="absmiddle" class="img-inline">= 93,67<br>
-22 h = 187,34<br>
-h = 8,5 m.</p>
-
-<p>As alturas referentes às outras duas bases deixamos como exercício.</p>
-
-
-                </div>
-              </md-card-content>
-            </md-card>
-          </uab-sanfonado>
-    <!--FIM SANFONADO SIMPLES-->
-
-  </div></div>
+<p>Com círculos de raio r metros, mesmo que r seja um inteiro positivo, teremos que fazer diferente, pois não conseguimos encaixar perfeitamente r<sup>2</sup> círculos de raio 1 dentro de um círculo de raio r.</p>
 
 
    </uab-quadro>
    <!-- FINAL QUADRO--> 
 
 
-<div class="h2">Dedução da Fórmula de Herão</div>
+<div class="h2">Áreas e Perímetros</div>
+
+   <p>Tome um retângulo de lados a e b.</p>
 
 
-<p>O desafio é apresentar uma prova para a fórmula de Herão mostrando que ela realmente calcula a área do triângulo. Apresentaremos uma prova algébrica com muitos cálculos que deixamos aqui para satisfazer a curiosidade dos alunos que se perguntarem por que a fórmula funciona.</p>
-
-<p>Como conhecemos a fórmula da área do triângulo como <img src="imagens/07/09.png" align="absmiddle" class="img-inline">, o desafio é calcular a altura <i>h</i> em função dos lados do triângulo.</p>
+<div align="center"><img src="imagens/08/04.png"></div>
 
 
+<p>Já vimos que sua área é <i>ab</i>.</p>
 
-<div align="center"><img src="imagens/07/10.png"> </div>
-
-<p>Ao traçarmos a altura em relação à base c, obtemos dois triângulos retângulos de onde tiramos:</p>
-
-<p style="text-align: center;"><br>b<sup>2</sup> = h<sup>2</sup> + d<sup>2</sup><br>
-a<sup>2</sup> = h<sup>2</sup> + (c – d)<Sup>2</Sup>
-  </p>
-
-<p>Daí,</p>
+<p>Agora, qual será a área de um novo retângulo obtido duplicando o tamanho dos lados deste retângulo?</p>
 
 
-<p style="text-align: center;"><br>a<sup>2</sup> – b<sup>2</sup>	= (c – d)<sup>2</sup> – d<sup>2</sup><br>
-  a<sup>2</sup> – b<sup>2</sup>	= c<sup>2</sup> – 2cd</p>
+<div align="center"><img src="imagens/08/05.png"></div>
 
+<p>Vemos que conseguimos encaixar 4 cópias do retângulo original dentro do novo retângulo.</p>
 
-<p>Daí,</p>
+<p>Assim, sua área será 4 vezes a área do retângulo original, ou <i>4ab</i>.</p>
 
-
-<div align="center"><img src="imagens/07/11.png"> </div>
-
-
-<p>Na dedução da fórmula, partimos do fato de que h<sup>2</sup>= b<sup>2</sup> – d<sup>2</sup> e usamos repetidamente o produto notável a<sup>2</sup> – b<sup>2</sup> = (a + b)(a – b).</p>
-
-
-<div align="center"><img src="imagens/07/12.png"> </div>
-
-<p>Lembre-se que <i>p=</i><img src="imagens/07/13.png" align="absmiddle" class="img-inline">, logo</p>
-
-<p style="text-align: center;"><br> a +b +c = 2p<br>
-b + c – a = 2p – 2a = 2(p – a).<br>
-a + b – c = 2p – 2c = 2(p – c).<br>
-a – b + c = 2p – 2b = 2(p – b).
+<p>Do mesmo modo podemos fazer com um retângulo de lados <i>3a</i> e <i>3b</i>. 
 </p>
 
-<p>Continuando,</p>
 
-<div align="center"><img src="imagens/07/14.png"> </div>
+<div align="center"><img src="imagens/08/06.png"></div>
 
 
-<p>Área do triângulo, A =<img src="imagens/07/15.png" align="absmiddle" class="img-inline"> logo, A<sup>2</sup> = <img src="imagens/07/16.png" align="absmiddle" class="img-inline"></p>
+<p>Veremos que sua área será <i>9ab</i>.</p>
+
+<p>E se obtemos um novo retângulo dividindo os lados por &frac12;, de tal forma que os lados agora serão <i>1/2a</i> e <i>1/2b</i>, qual será sua área?</p>
+
+
+<div align="center"><img src="imagens/08/07.png"></div>
+
+
+
+<p>Podemos ver que sua área será<img src="imagens/08/08.png" class="img-inline" align="absmiddle"><i>ab</i>.</p>
+
+<p>Não será difícil entendermos que um retângulo de lados ra e rb terá área r<sup>2</sup>ab.</p>
+
+
+<div align="center"><img src="imagens/08/09.png"></div>
+
+
+<p>Ou seja, se multiplicarmos os lados de um retângulo por um fator r, obtemos um retângulo de área r<sup>2</sup> vezes a área do retângulo original.</p>
+
+<p>À soma do tamanho dos lados de um polígono nós chamamos de <i>perímetro</i>.</p>
+
+
+<p>Assim, o retângulo de lados a e b tem perímetro 2(a+ b).</p>
+
+<p>Já o retângulo de lados ra e rb tem perímetro 2r(a+b).</p>
+
+<p>Assim, se aumentamos os lados de um retângulo por um fator r, seu perímetro aumenta por um fator r. Já a sua área aumenta por um fator de r<sup>2</sup>.</p>
+
+
+
+<!-- INICIO QUADRO-->      
+  <uab-quadro title="Observação" class="quadro-olhando" icon="layout/quadro-olhando.png">
+          <p>Tome um retângulo Q<sub>1</sub> de lados a e b. E tome um retângulo Q<sub>2</sub> de lados ra e rb.
+Chame de A<sub>1</sub> a área do retângulo Q<sub>1</sub>. Chame de A<sub>2</sub> a área do retângulo Q<sub>2</sub>.
+Chame de p<sub>1</sub> o perímetro do retângulo Q<sub>1</sub>. Chame de p<sub>2</sub> o perímetro do retângulo Q<sub>2</sub>.
+</p>
+
+
+<div align="center"><img src="imagens/08/10.png"></div>
+
+
+<p>Obtemos a seguinte relação:</p>
+
+
+<div align="center"><img src="imagens/08/11.png"></div>
+
+
+
+<div align="center"><img src="imagens/08/12.png"></div>
+
+
+<p>Logo, <img src="imagens/08/13.png" class="img-inline" align="absmiddle"></p>
+
+
+  </uab-quadro>
+  <!-- FINAL QUADRO--> 
+
+
+<!--INICIO TABS-->
+    <div align="center" >
+    <md-card style=" width:80%; text-align: justify; ">
+<md-tabs md-dynamic-height md-border-bottom>
+
+<!--INICIO DA ABA HORINZOTAL-->
+        <md-tab label="Exemplo 1">
+          <md-content class="md-padding">
+            <div class="h3">Exemplo 1</div>
+            
+            <p>Retângulo Q<sub>1</sub> de lados <i>2m</i> e <i>4m</i>.</p>
+<p>Retângulo Q<sub>2</sub> de lados <i>4m</i> e <i>8m</i>.</p>
+<p>Fator = 2</p>
+
+<p>Perímetro de Q<sub>1</sub> = p<sub>1</sub> = 12m e perímetro de Q<sub>2</sub> = 2 X p<sub>1</sub> = 24m.</p>
+<p>Área de Q<sub>1</sub> = A<sub>1</sub> = 8m<sup>2</sup> e área de Q<sub>2</sub> = 4 X A<sub>1</sub> = 32m<sup>2</sup>.
+</p>
+            
+          </md-content>
+        </md-tab>
+ <!--FINAL DA ABA-->  
+
+
+<!--INICIO DA ABA HORINZOTAL-->
+        <md-tab label="Exemplo 2">
+          <md-content class="md-padding">
+            <div class="h3">Exemplo 2</div>
+            
+            <p>Retângulo Q<sub>1</sub> de lados <i>2m</i> e <i>4m</i>.</p>
+<p>Retângulo Q<sub>2</sub> de lados <i>3m</i> e <i>6m</i>.</p>
+<p>Fator = 1,5</p>
+
+<p>Perímetro de Q<sub>1</sub> = p<sub>1</sub> = 12m e perímetro de Q<sub>2</sub> = 1,5 X p<sub>1</sub> = 18m.</p>
+<p>Área de Q<sub>1</sub> = A<sub>1</sub> = 8m<sup>2</sup> e área de Q<sub>2</sub> = 2,25 X A<sub>1</sub> = 18m<sup>2</sup>.
+</p>
+            
+          </md-content>
+        </md-tab>
+ <!--FINAL DA ABA-->  
+
+      
+    </md-tabs>
+</md-card>   
+    </div>   
+    <!--FINAL  DA ABA HORINZOTAL--> 
+
+
+<div class="h2">Áreas de Figuras Irregulares</div>
+
+<p>Vimos então que se os lados de um retângulo são acrescidos por um fator r, a área do retângulo acresce de um fator r<sup>2</sup>. Mas isso vale para qualquer figura, mesmo para uma figura curvilínea de forma irregular?</p>
+
+
+<div align="center"><img src="imagens/08/14.png"></div>
+
+<p>Vejamos essa figura em forma de rim que tem uma área A. Se inflarmos a figura do rim por um fator de 2, o que acontece com sua área?</p>
+
+<p>Será que ela se comporta como a área do retângulo e aumenta por um fator de 2<sup>2</sup>?</p>
+
+<div align="center"><img src="imagens/08/15.png"></div>
+
+<p>Visualmente parece que sim. Mas em matemática tudo precisa ser provado. Como provamos isso (ou até descobrimos que nossa intuição não está certa)?</p>
+
+<p>Seria interessante o próprio estudante tentar alguma solução. Não adianta medir o contorno, esse nós asseguramos que é o dobro do contorno original, faz parte do enunciado do problema.</p>
+
+<p>Nossa solução é criar um grid (uma malha) de retângulos conforme a figura abaixo.</p>
+
+<div align="center"><img src="imagens/08/16.png"></div>
+
+<p>Se somamos as áreas de todos os retângulos completamente inseridos na figura temos uma primeira aproximação da área interior da figura. Certamente essa aproximação não é muito boa, pois deixa grandes porções internas da figura de fora.</p>
+
+<div align="center"><img src="imagens/08/17.png"></div>
+
+<p>A aproximação fica bem melhor se diminuirmos a malha do grid com retângulos bem menores.</p>
+
+
+<div align="center"><img src="imagens/08/18.png"></div>
+
+
+<p>Observe que a parte que fica de fora agora é bem menor.</p>
+
+<p>Agora pegue a figura com o primeiro grid e o infle para o dobro do tamanho inclusive o grid.
+</p>
+
+<div align="center"><img src="imagens/08/19.png"></div>
+
+
+<p>Observe que o número de retângulos inseridos não muda, apenas eles dobram os tamanhos dos lados acompanhando o crescimento da figura. Se numerarmos os triângulos fica mais fácil de ver.</p>
+
+
+<div align="center"><img src="imagens/08/20.png"></div>
+
+
+<p>Vemos que na figura inicial há 10 retângulos completamente inseridos na figura cada um com área A<sub>i</sub>. Logo a área (mal) aproximada da figura será:</p>
+
+
+
+<!--INICIO EFEITO DESTAQUE-->   
+<div align="center">
+<p class="destaque uab-md-primary-light" style="width:75%; text-align:center;">A<sub>aprox</sub> = A<sub>1</sub> + A<sub>2</sub> + … + A<sub>10</sub>.</p>
+</div>
+<!--FINAL EFEITO DESTAQUE--> 
+
+
+<p>Se inflarmos a figura por um fator, digamos r, continuarão a ter 10 retângulos inseridos, só que a área dos retângulos inseridos terá sido acrescida de um fator r<sup>2</sup>, conforme a figura.</p>
+
+<div align="center"><img src="imagens/08/21.png"></div>
+
+<p>Assim a área aproximada da nova figura, A’<sub>aprox</sub>, será dada por:</p>
+
+
+<!--INICIO EFEITO DESTAQUE-->   
+<div align="center">
+<p class="destaque uab-md-primary-light" style="width:75%; text-align:center;">A’<sub>aprox</sub> = r<sup>2</sup>A<sub>1</sub> + r<sup>2</sup>A<sub>2</sub> + … + r<sup>2</sup>A<sub>10</sub> = r<sup>2</sup>A<sub>aprox</sub>.</p>
+</div>
+<!--FINAL EFEITO DESTAQUE--> 
+
+
+<p>O mesmo argumento vale para um grid de retângulos de malha mais fina e quanto mais fina for a malha (maior o número n de retângulos inseridos), mais aproximada serão A<sub>aprox</sub> da área original e A’<sub>aprox</sub> da área dilatada. E a relação entre as áreas se dará: </p>
+
+
+
+<!--INICIO EFEITO DESTAQUE-->   
+<div align="center">
+<p class="destaque uab-md-primary-light" style="width:75%; text-align:center;">A’<sub>aprox</sub> = r<sup>2</sup>A<sub>aprox</sub>.</p>
+</div>
+<!--FINAL EFEITO DESTAQUE--> 
+
+
+<!-- INICIO QUADRO-->      
+  <uab-quadro title="Observação" class="quadro-olhando" icon="layout/quadro-olhando.png">
+          <p>Como aconteceu com os retângulos a área da figura será acrescida por um fator <i>r<sup>2</sup></i>, se a figura é aumentada por um fator <i>r</i>.</p>
+
+<p><b>Observação:</b> Dada uma figura original, ela será dilatada por um fator <i>r</i>, se <i>r > 1</i>, e será contraída por um fator <i>r</i>, se <i>r < 1</i>. Em qualquer caso, a relação se mantém. A área da nova figura será aumentada/diminuída por um fator r<sup>2</sup>.
+</p>
+  </uab-quadro>
+  <!-- FINAL QUADRO--> 
+
+<p>Agora podemos voltar à área do círculo.</p>
+
+
+<div class="h2">Área do Círculo</div>
+
+<p>Tome um círculo de raio 1 e digamos que sua área seja A<sub>1</sub>.</p>
+
+<div align="center"><img src="imagens/08/22.png"></div>
+
+
+<p>Chamamos de circunferência à linha de contorno do círculo.</p>
+
+<p>Como fazemos para duplicar a circunferência de um círculo? </p>
+
+<p>Basta duplicarmos o tamanho de seu raio.</p>
+
+<p>Qual será a área de um círculo de raio 2?</p>
+
+<div align="center"><img src="imagens/08/23.png"></div>
+
+<p>O que descobrimos para áreas em geral se aplica para as áreas de círculos, um acréscimo de um fator 2 implica em um acréscimo de fator 2<sup>2</sup> = 4 na área. </p>
+
+<p>Assim a área de um círculo de raio 2, digamos A<sub>2</sub>, será:</p>
+
+<p style="text-align: center;">A<sub>2</sub> = 2<sup>2</sup>A<sub>1</sub> = 4A<sub>1</sub>, onde A<sub>1</sub> é a área do círculo de raio 1.</p>
+
+
+<p>Qual será a área de um círculo de raio 10?</p>
+
+
+<p style="text-align: center;">A<sub>10</sub> = 10<sup>2</sup>A<sub>1</sub> = 100A<sub>1</sub>,</p>
+
+
+<p>Qual será a área de um círculo de raio 1/2?</p>
+
+
+<div align="center"><img src="imagens/08/24.png"></div>
+
+
+<p>Em geral, qual será a área de um círculo de raio r?</p>
+
+
+<div align="center"><img src="imagens/08/25.png"></div>
+
+
+<!--INICIO EFEITO DESTAQUE-->   
+<div align="center">
+<p class="destaque uab-md-primary-light" style="width:75%; text-align:center;">A<sub>r</sub> = r<sup>2</sup>A<sub>1</sub>, onde A<sub>1</sub> é a área do círculo de raio 1.</p>
+</div>
+<!--FINAL EFEITO DESTAQUE--> 
+
+<p>Nós não temos nos referido a nenhuma unidade de medida de modo que estamos subentendendo que A<sub>1</sub> é a área do círculo de raio 1 unidade de medida e que A<sub>r</sub> = r<sup>2</sup>A<sub>1</sub> significa que a área do círculo de raio r unidades de medida é r<sup>2</sup> vezes a área do círculo de 1 unidade de medida.</p>
+
+
+<p>A área do círculo de raio 1m é o nosso metro redondo (m○), assim como a área de um quadro de lado l é l<sup>2</sup>m<sup>2</sup>; a área de um círculo de raio r é r<sup>2</sup>m○, onde m○ é a área de um círculo de raio 1.</p>
+
+
+<div class="h2">O número &Pi;</div>
+
+
+<div style="text-align: center;" class="h3">O que é o ∏ e como se calcula seu valor?</div>
+
+
+<p>Muitos se lembrarão que ele é o <b>quociente da circunferência pelo diâmetro de um círculo</b>. E estarão certos.</p>
+
+
+<p>E se perguntamos o valor do número &Pi; muitos se lembrarão que seu valor aproximado é de 3,1416 e que ele é um número irracional com infinitas casas decimais de modo que é impossível escrever o seu valor exato.</p>
+
+
+<p>Mas como sabemos disso? Ou melhor, como estamos em matemática, como provamos isso? Como sabemos que a razão entre a circunferência e o diâmetro de qualquer círculo independentemente do tamanho do raio, seja ele grande ou pequeno, racional ou irracional, é sempre o mesmo valor? Faça o seguinte experimento: </p>
+
+
+
+<h1>AQUI TERÁ UM INFOGRAFICO PENDENTE</h1>
+
+
+<p>E então, qual o resultado? Aqui vamos demonstrar o resultado de que, em todo círculo, independentemente do tamanho do raio, a razão da circunferência pelo diâmetro sempre dá o mesmo valor e, o mais inusitado, esse valor é justamente o valor da área de um círculo de raio 1 medido na mesma unidade do raio do círculo original. A este valor constante se dá o nome de &Pi;. Essa é uma surpreendente relação entre razão da circunferência e diâmetro, de um lado, e da área de um círculo, por outro.</p>
+
+
+
+
+<div class="h2">Teorema</div>
+
+
+<h1>INSERIR GIF EM UMA FOLHA DE PAPEL APARECE A TEORIA ESCRITA PENDENTE </h1>
+
+
+
+<div align="center"><img src="imagens/08/26.png"></div>
+
+
+
+<p>Na prova desse teorema, utilizaremos o resultado estabelecido acima de que a área do círculo de raio <i>r</i> é dada por A<sub>r</sub> = r<sup>2</sup>A<sub>1</sub>, onde A1 é a área do círculo de raio 1.</p>
+
+
+
+<div class="h2">Prova </div>
+
+
+<p>Vejamos nos slides a seguir círculo de raio <i>r</i> e vamos aproximar sua área e circunferência utilizando polígonos regulares inscritos de <i>n</i> lados:</p>
+
+
+
+
+<div align="center" >  <iframe src="Revista_HTML/locais/local-3.html" width="600" height="520" scrolling="no" frameborder="0" class="hidden-print"></iframe>
+
+
+     <!--INICIO SANFONADO SIMPLES-->
+       <div  align="center" class="visible-print">
+        <div style="width:75%; text-align: justify;">
+        <uab-sanfonado>
+               <md-card class='sanfonado'>
+                 <md-card-title>
+                   <md-card-title-text>
+                     <a uab-sanfonado-toggle>
+                       <md-truncate>Livro</md-truncate>
+                     </a>
+                   </md-card-title-text>
+       
+                   <button md-button class="md-icon-button" uab-sanfonado-toggle>
+                     <md-icon md-font-icon="icon-keyboard_arrow_down"></md-icon>
+                   </button>
+                 </md-card-title>
+                 <md-card-content class="uab-sanfonado-wrap">
+                   <div class="uab-sanfonado-content">
+                   
+                    <p class="sem_recuo">Versão Textual - Efeito Livro</p>
+
+
+<p>Chamaremos de A<sub>r</sub> a área do círculo de raio <i>r</i> e de <i>C</i> sua circunferência.</p>
+
+
+<div align="center"><img src="imagens/08/27.png"></div>
+
+
+<p>Começando com n = 4, obtemos 4 triângulos ligando o centro aos 4 vértices.</p>
+
+
+<p>A área do quadrado inscrito é a nossa primeira aproximação (ainda muito ruim) para a área do círculo e o seu perímetro é a aproximação para a circunferência.</p>
+
+
+
+<p>À medida que aumento n, essas aproximações vão melhorando.</p>
+
+
+
+<div align="center"><img src="imagens/08/28.png"></div>
+
+
+<p>Com n arbitrariamente grande, nossas aproximações chegam bastante perto dos valores exatos.</p>
+
+
+<div align="center"><img src="imagens/08/29.png"></div>
+
+
+
+<p>Aproximação com polígono regular de <i>n</i> lados para a área e a circunferência do círculo. Lembrem que o polígono regular inscrito aproxima tanto a área quanto a circunferência do círculo.</p>
+
+<p>Vamos voltar agora e examinar mais de perto nossas aproximações, comecemos com o caso <i>n = 4</i>. </p>
+
+
+<div align="center"><img src="imagens/08/30.png"></div>
+
+
+
+<p>Vamos chamar a área do polígono inscrito de <i>n</i> lados de A<sub>n</sub> e seu perímetro de P<sub>n</sub>. Já vimos na seção sobre área de polígonos que </p>
+
+
+<div align="center"><img src="imagens/08/31.png"></div>
+
+
+<p>Onde a é o apótema e <i>l</i> é o lado do polígono regular.</p>
+
+<p>No nosso caso <i>n = 4</i>. </p>
+
+
+<div align="center"><img src="imagens/08/32.png"></div>
+
+
+<p>A<sub>4</sub> e P<sub>4</sub> são aproximações ainda muito distantes dos valores de A<sub>r</sub> e C, (área do círculo e circunferência, respectivamente).</p>
+
+
+<p>Peguemos agora n = 6.</p>
+
+
+<div align="center"><img src="imagens/08/33.png"></div>
+
+
+<p>As mesmas relações valem. </p>
+
+
+<div align="center"><img src="imagens/08/34.png"></div>
+
+
+
+<p>A<sub>6</sub> e P<sub>6</sub> são melhores aproximações, mas ainda distantes dos valores de A<sub>r</sub> e C.</p>
+
+
+<p>O que interessa é que o mesmo processo pode se repetir com <i>n</i> cada vez maior e se obtendo melhores aproximações.</p>
+
+<p>Tomemos, pois, um <i>n</i> arbitrário.</p>
+
+
+
+<div align="center"><img src="imagens/08/35.png"></div>
+
+
+<p>Valem as mesmas relações.</p>
+
+
+
+<div align="center"><img src="imagens/08/36.png"></div>
+
+
+                   </div>
+                 </md-card-content>
+               </md-card>
+             </uab-sanfonado>
+         </div></div>
+       <!--FIM SANFONADO SIMPLES-->
+</div>
+
+<!-- FINAL EFEITO LIVRO COM IMAGENS-->
+
+
+
+
+<p>Agora chegamos ao passo principal da prova.</p>
+
+<p>Com n muito grande A<sub>n</sub> está muito próxima de A<sub>r</sub> (área do círculo) e P<sub>n</sub> de C (circunferência do círculo).</p>
+
+
+
+<p>Mas sempre podemos fazer n ainda maior até que não se consiga desenhar mais o polígono de tão pequenos que estarão seus lados. Nesse ponto A<sub>n</sub> e A<sub>r</sub> já estão praticamente iguais (a área do polígono de <i>n</i> lados é quase igual à da circunferência); e o mesmo vale para P<sub>n</sub> e a circunferência C. Claro que nunca são iguais, pois o polígono nunca será o círculo, mas estarão suficientemente próximos. Em termos matemáticos dizemos que:</p>
+
+
+<!--INICIO EFEITO DESTAQUE-->   
+<div align="center">
+<p class="destaque uab-md-primary-light" style="width:75%; text-align:justify">Se n <span style ="color: red"><i>tende</i></span> para infinito então a área do polígono <span style ="color: red"><i>tende</i></span> para a área do círculo e o seu perímetro <span style ="color: red"><i>tende</i></span> para a circunferência do círculo.</p>
+</div>
+<!--FINAL EFEITO DESTAQUE--> 
+
+
+<p>Mais ainda, o apótema do polígono <span style ="color: red"><i>tende</i></span> para o raio do círculo.</p>
+
+
+<p>(usamos a seta ‘&rarr;’ para indicar que uma quantidade A tende para a quantidade B, como A → B.)</p>
+
+
+<p>Assim temos:</p>
+
+<p style="text-align: center;"><br>An &rarr; Ar <br>
+Pn &rarr; C<br>
+a &rarr; r</p>
+
+
+<p>Agora tome a relação: </p>
+
+
+<div align="center"><img src="imagens/08/37.png"></div>
+
+
+<p>Por um lado, ela tende para Ar.</p>
+
+
+<p>E por outro lado, ela tende para  <img src="imagens/08/37.png" align="absmiddle" class="img-inline">.</p>
+
+
+<p>Se a mesma quantidade tende para dois valores, esses dois valores só podem ser o mesmo.</p>
 
 
 <p>Assim,</p>
 
 
-<div align="center"><p style="text-align: center;"><img src="imagens/07/17.png" align="absmiddle" class="img-inline">  <i>QED</i></p></div>
+<div align="center"><img src="imagens/08/39.png"></div>
+
+<p>Mas já conhecemos a área do círculo de raio r como A<sub>r</sub>=r<sup>2</sup> A<sub>1</sub>, onde A<sub>1</sub> é a área do círculo de raio 1.</p>
 
 
-<!-- INICIO QUADRO-->      
-<uab-quadro title="Leitura complementar" class="quadro-leit_complementar" icon="layout/quadro-leit_complementar.png">
-        <p><a href="https://en.wikipedia.org/wiki/Heron's_formula" target="_blank">Heron's formula</a></p>
+<p>Logo,</p>
 
-<p><a href="http://recursostic.educacion.es/descartes/web/materiales_didacticos/formula_heron/formula_de_Heron.htm" target="_blank">Fórmula de  Herón</a></p>
+<div align="center"><img src="imagens/08/40.png"></div>
 
+
+<p>Lembremos que &Pi; foi definido como <img src="imagens/08/41.png" align="absmiddle" class="img-inline">, logo &Pi; = A<sub>1</sub>; a área de um círculo de raio 1. QED</p>
+
+
+
+<p>Isto encerra a prova de nosso teorema. Muitos não sabiam, mas quando dividimos a circunferência pelo diâmetro de um círculo encontramos a área de um círculo de raio 1!</p>
+
+<p>E esse resultado, claro, vale para qualquer que seja o círculo, porque nossa prova foi feita para um círculo de raio <i>r</i> independentemente do valor de <i>r</i>.</p>
+
+
+
+<div style="text-align: center;" class="h3">Como sabemos que o valor de &Pi; é 3,1415 ... um número irracional?</div>
+
+
+<p>Temos <b>duas</b> maneiras de calcular &Pi;: Ou dividimos a circunferência pelo diâmetro de qualquer círculo, ou calculamos a área de um círculo de raio 1. </p>
+
+<p>Infelizmente, nenhuma dessas tarefas é simples, este cálculo está fora do escopo do ensino médio, pois para provarmos que &Pi; é irracional e obtermos seu valor precisamos recorrer ao cálculo de integrais e convergência de séries infinitas. Aqueles que, porventura, continuarem seus estudos em matemática na universidade terão a oportunidade de fazer essa prova e calcular o valor de &Pi;.</p>
+
+
+<!-- INICIO QUADRO   REFERÊNCIAS-->
+<uab-quadro  class="quadro-uab" icon="layout/quadro-referencias.png" >
+ <uab-sanfonado>
+   <md-card-title>
+       <md-card-title-text>
+              <a uab-sanfonado-toggle>
+                Créditos
+              </a>
+            </md-card-title-text>
+
+            <button md-button class="md-icon-button" uab-sanfonado-toggle>
+              <md-icon md-font-icon="icon-keyboard_arrow_down"></md-icon>
+            </button>
+          </md-card-title>
+          <md-card-content class="uab-sanfonado-wrap">
+            <div class="uab-sanfonado-content">
+              
+         <p class="sem_recuo">Essa seção foi baseada na aula do professor Serge Lang, What is Pi?, apresentada no livro MATH! <i>Encounters with High School Students</i>. Springer-Verlag, 1985.</p>
+  <p class="sem_recuo">Embora não seja apenas uma tradução, ela utilizou a aula do professor Serge Lang como roteiro e reproduz o argumento apresentado ali, além de se utilizar das figuras explicativas.
+</p>
+    	
+       </div>
+     </md-card-content>
+  </uab-sanfonado>
 </uab-quadro>
-<!-- FINAL QUADRO--> 
-
+ <!-- FINAL QUADRO  REFERÊNCIAS-->
 
 
   </div>
