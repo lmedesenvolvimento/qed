@@ -52,6 +52,11 @@
             "nome": "Tópico 09: Área de círculos no Egito Antigo",
             "local": "topicos/09.html",
             "audio": "audios/09.mp3"
+        },
+        {
+            "nome": "Tipos de questao",
+            "local": "topicos/formularios.html",
+            "audio": "audios/formularios.mp3"
         }
     ],
     "pdf": "pdf/MaterialEstruturadoMatematica_aula_09.pdf",
